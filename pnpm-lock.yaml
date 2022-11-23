@@ -12,6 +12,7 @@ specifiers:
   eslint-plugin-jsx-a11y: ^6.6.1
   eslint-plugin-react: ^7.31.11
   prettier: ^2.7.1
+  query-string: ^7.1.1
   ra-data-json-server: ^4.5.2
   react: ^18.2.0
   react-admin: ^4.5.2
@@ -28,6 +29,7 @@ dependencies:
   eslint-plugin-jsx-a11y: 6.6.1_eslint@8.28.0
   eslint-plugin-react: 7.31.11_eslint@8.28.0
   prettier: 2.7.1
+  query-string: 7.1.1
   ra-data-json-server: 4.5.2_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-admin: 4.5.2_2zx2umvpluuhvlq44va5bta2da

@@ -2,7 +2,7 @@ import { Admin, Resource } from 'react-admin';
 import { OrganizationList, OrganizationEdit, OrganizationCreate } from './organizations';
 import dataProviderFactory from './dataProvider';
 
-const dataProvider = dataProviderFactory('http://localhost:5036');
+const dataProvider = dataProviderFactory(import.meta.env.VITE_API_URL);
 
 const App = () => (
   <Admin dataProvider={dataProvider}>

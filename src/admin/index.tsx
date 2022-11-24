@@ -1,4 +1,4 @@
-import { Admin, Resource } from 'react-admin';
+import { Admin, Resource, ListGuesser } from 'react-admin';
 import { OrganizationList, OrganizationEdit, OrganizationCreate } from './organizations';
 import dataProviderFactory from './dataProvider';
 
@@ -13,7 +13,7 @@ const App = () => (
       edit={OrganizationEdit}
       create={OrganizationCreate}
     />
-    {/* <Resource name="v1/donators" options={{ label: 'Donators' }} list={ListGuesser} /> */}
+    <Resource name="v1/donators" options={{ label: 'Donators' }} list={ListGuesser} />
   </Admin>
 );
 

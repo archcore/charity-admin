@@ -9,7 +9,8 @@ function dataProviderFactory(apiUrl: string): DataProvider {
       const { page, perPage } = params.pagination;
       const { field, order } = params.sort;
       const query = {
-        sort: JSON.stringify({ [field]: order }),
+        sort: field,
+        order,
         pageIndex: page,
         pageSize: perPage,
         ...params.filter,
@@ -45,7 +46,8 @@ function dataProviderFactory(apiUrl: string): DataProvider {
       const { page, perPage } = params.pagination;
       const { field, order } = params.sort;
       const query = {
-        sort: JSON.stringify({ [field]: order }),
+        sort: field,
+        order,
         pageIndex: page,
         pageSize: perPage,
         ...params.filter,
